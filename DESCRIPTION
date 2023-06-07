@@ -2,10 +2,16 @@ Package: NCLRtemplates
 Type: Package
 Title: NCL R templates
 Version: 0.1.0
-Author: Chris Mainey
+Authors@R: c(
+          person("Chris", "Mainey", ,"c.mainey1@nhs.net", role= c("aut", "cre"), 
+          comment = c(ORCID ="0000-0002-3018-6171")),
+          person("NHS-R Community", role = "cph")
+          )
 Maintainer: Chris Mainey <c.mainey1@nhs.net>
 Description: Colour palettes for gglpot and general, Rmarkdown Templates for html, Word and Xaringan outputs
 License: MIT + file LICENSE
+URL: https://ncl-icb-analytics.github.io/NCLRtemplates/, https://github.com/ncl-icb-analytics/NCLRtemplates/
+BugReports: https://github.com/ncl-icb-analytics/NCLRtemplates/issues
 Encoding: UTF-8
 LazyData: true
 Imports: 
