@@ -1,0 +1,19 @@
+Package: NCLRtemplates
+Type: Package
+Title: NCL R templates
+Version: 0.1.0
+Author: Chris Mainey
+Maintainer: Chris Mainey <c.mainey1@nhs.net>
+Description: Colour palettes for gglpot and general, Rmarkdown Templates for html, Word and Xaringan outputs
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Imports: 
+    Cairo,
+    extrafont,
+    ggplot2,
+    knitr,
+    rmarkdown,
+    showtext,
+    sysfonts
+RoxygenNote: 7.2.3

@@ -1,0 +1,40 @@
+---
+title: "Untitled"
+author: "[North Central London ICB]"
+output:
+  NCLtemplates::ncl_document: default
+---
+
+```{r setup, include = FALSE}
+
+library(knitr)
+library(tidyverse)
+library(NCLtemplates)
+
+# set default options
+opts_chunk$set(echo = FALSE,
+               dpi = 300,
+               dev.args = list(type = "cairo"))
+
+# if you want to use the NCL Theme colours change the variable below
+# to true
+use_ncl_theme_colours <- FALSE
+
+if (use_ncl_theme_colours) {
+  scale_fill_continuous <- partial(scale_fill_ncl, discrete = FALSE)
+  scale_fill_discrete <- partial(scale_fill_ncl, discrete = TRUE)
+  scale_colour_continuous <- partial(scale_colour_ncl, discrete = FALSE)
+  scale_colour_discrete <- partial(scale_colour_ncl, discrete = TRUE)
+
+  scale_color_continuous <- scale_colour_continuous
+  scale_color_discrete <- scale_colour_discrete
+}
+```
+
+# Overview
+
+# Analysis
+
+[//]: <> (URL's / References --------------------------------------------------)
+[email]: mailto:`r Sys.getenv("MY_EMAIL")`
+[web]: https://www.nclhealthandcare.org.uk/
