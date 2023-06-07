@@ -15,5 +15,7 @@ Imports:
     knitr,
     rmarkdown,
     showtext,
-    sysfonts
+    sysfonts,
+    xaringan
 RoxygenNote: 7.2.3
+URL: https://ncl-icb-analytics.github.io/NCLRtemplates/
