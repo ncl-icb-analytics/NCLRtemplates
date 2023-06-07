@@ -11,7 +11,7 @@ public.](https://www.repostatus.org/badges/latest/wip.svg)](https://www.repostat
 <!-- badges: end -->
 
 This package provides ggplot2 themes and colour palettes, as well as
-markdown templates for use by [NCL ICB analytical
+rmarkdown templates for use by [NCL ICB analytical
 teams](http://www.nclhealthandcare.org.uk).
 
 ## Install Instructions
