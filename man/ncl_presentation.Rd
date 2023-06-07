@@ -2,7 +2,7 @@
 % Please edit documentation in R/ncl_presentation_html.R
 \name{ncl_presentation}
 \alias{ncl_presentation}
-\title{Convert to an Strategy Unit xaringan presentation}
+\title{Convert to an NCL xaringan presentation}
 \usage{
 ncl_presentation(...)
 }
@@ -13,7 +13,7 @@ ncl_presentation(...)
 R Markdown output format to pass to \code{\link{render}}
 }
 \description{
-Format for converting from R Markdown to a Strategy Unit branded xaringan
+Format for converting from R Markdown to an NCL branded xaringan
 presentation.
 }
 \examples{
@@ -21,6 +21,6 @@ presentation.
 library(rmarkdown)
 
 # simple invocation
-render("input.Rmd", su_presentation())
+render("input.Rmd", ncl_presentation())
 }
 }

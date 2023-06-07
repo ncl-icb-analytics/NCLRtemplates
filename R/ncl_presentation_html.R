@@ -1,6 +1,6 @@
-#' Convert to an Strategy Unit xaringan presentation
+#' Convert to an NCL xaringan presentation
 #'
-#' Format for converting from R Markdown to a Strategy Unit branded xaringan
+#' Format for converting from R Markdown to an NCL branded xaringan
 #' presentation.
 #'
 #' @param ... additional arguments to pass to [xaringan::moon_reader()]
@@ -14,7 +14,7 @@
 #' library(rmarkdown)
 #'
 #' # simple invocation
-#' render("input.Rmd", su_presentation())
+#' render("input.Rmd", ncl_presentation())
 #' }
 #' @export
 ncl_presentation <- function(...) {
