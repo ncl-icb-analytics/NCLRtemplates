@@ -9,7 +9,7 @@ output:
 
 library(knitr)
 library(tidyverse)
-library(NCLtemplates)
+library(NCLRtemplates)
 
 # set default options
 opts_chunk$set(echo = FALSE,
