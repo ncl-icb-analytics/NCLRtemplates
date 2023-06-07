@@ -1,7 +1,7 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# NCLRtemplates <img src="man/figures/logo.jpg" align="right" height="100px" />
+# NCLRtemplates <img src="man/figures/logo.jpg" style="float:right; height:100px;" />
 
 <!-- badges: start -->
 
