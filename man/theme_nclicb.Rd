@@ -4,14 +4,14 @@
 \alias{theme_nclicb}
 \title{Creates the NCL ICB Theme for ggplot}
 \usage{
-theme_nclicb(base_family = "opensans")
+theme_nclicb(base_family = "Mulish")
 }
 \arguments{
 \item{base_family}{The font to use in this theme}
 }
 \description{
 Creates a base theme for ggplot objects. By default this uses a font that
-requires the \link[extrafont]{extrafont} package to be installed.
+requires installing, and this is handled in the package load and `ncl_setup` function package to be installed.
 }
 \examples{
 \dontrun{
@@ -21,4 +21,7 @@ ggplot(iris, aes(Sepal.Width, Sepal.Length, colour = Species)) +
   geom_point() +
   theme_nclicb()
 }
+}
+\seealso{
+[ncl_setup()], [show_text_auto()], [font_font_add_google()], [theme_nclics()], [theme()], [theme_classic()]
 }

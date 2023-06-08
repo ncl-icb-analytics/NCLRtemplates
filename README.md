@@ -31,5 +31,56 @@ form scale\_\*\_ncl.
 
 ## Usage
 
+When using it for the first time, please run the set-up function:
+
+``` r
+ncl_setup()
+```
+
+The set-up function makes sure you have the right environmental
+variables set up for the markdown templates to read, and installs the
+NCL style guide font ‘Mulish’, along with ‘Open Sans’.
+
+## Example
+
+To use NCL colours and theme in `ggplot2`, use the functions in this
+package, such as:
+
+``` r
+library(NCLRtemplates)
+library(NHSRdatasets)
+library(ggplot2)
+library(dplyr)
+
+data(LOS_model)
+
+LOS_model %>% 
+  group_by(Organisation) %>% 
+  summarise(Deaths = sum(Death)) %>% 
+  ggplot(aes(y=Deaths, x = Organisation, fill=Organisation))+
+  geom_col() +
+  scale_fill_ncl()+
+  labs(title = "Example plot with NCL ICS colours", subtitle = "Data: 'LOS_model' from NHSRdatasets R package")+
+  theme_nclicb()
+```
+
+<img src="man/figures/README-ggplot_example-1.png" width="100%" />
+
+``` r
+
+
+LOS_model %>% 
+  group_by(Organisation) %>% 
+  summarise(Deaths = sum(Death),
+          AvAge = median(Age)) %>% 
+  ggplot(aes(y=Deaths, x = AvAge, col=Organisation))+
+  geom_point(size=2) +
+  scale_colour_ncl()+
+  labs(title = "Example plot with NCL ICS colours", subtitle = "Data: 'LOS_model' from NHSRdatasets R package")+
+  theme_nclicb()
+```
+
+<img src="man/figures/README-ggplot_example-2.png" width="100%" />
+
 The packages documentation can be found
 [here](https://ncl-icb-analytics.github.io/NCLRtemplates/).

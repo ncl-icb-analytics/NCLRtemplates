@@ -2,6 +2,7 @@
 
 export(ncl_document)
 export(ncl_presentation)
+export(ncl_setup)
 export(ncl_theme_cols)
 export(ncl_theme_pal)
 export(scale_color_ncl)
