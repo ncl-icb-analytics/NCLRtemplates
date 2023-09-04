@@ -15,7 +15,7 @@
 ncl_setup <- function(){
     
     # Environmental variables
-    path <- usethis:::scoped_path_r("user", ".Renviron", envvar = "R_ENVIRON_USER")
+    path <- file.path(Sys.getenv("HOME"), ".Renviron")
     
     if(sum(grepl(pattern = "MY_NAME|MY_EMAIL|MY_JOBTITLE", x = readLines(path))) <3){
       

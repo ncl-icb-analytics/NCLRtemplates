@@ -1,0 +1,98 @@
+---
+title: "Presentation"
+author: "**[`r Sys.getenv('MY_NAME')`][email]**<br />`r Sys.getenv('MY_JOBTITLE')`"
+institute: "NCL ICB"
+output:
+  NCLRtemplates::ncl_presentation: default
+---
+
+```{r setup, include = FALSE}
+# check that the following environment variables are set
+# set these in a file file called .Renviron: e.g.
+# MY_NAME=Joe Bloggs
+# MY_EMAIL=joe.bloggs@nhs.net
+# MY_JOBTITLE=Analyst
+stopifnot(Sys.getenv("MY_NAME") != "")
+stopifnot(Sys.getenv("MY_EMAIL") != "")
+stopifnot(Sys.getenv("MY_JOBTITLE") != "")
+
+library(Cairo)
+library(knitr)
+library(tidyverse)
+library(NCLRtemplates)
+
+# set default options
+opts_chunk$set(echo = FALSE,
+               fig.width = 7.252,
+               fig.height = 4,
+               dpi = 300,
+               dev.args = list(type = "cairo"))
+
+# Set's the base ggplot theme to the Strategy Unit Theme
+theme_set(ncl_theme())
+
+# uncomment the following lines if you want to use the Strategy Unit theme
+# colours by default
+# scale_fill_continuous <- partial(scale_fill_ncl, discrete = FALSE)
+# scale_fill_discrete <- partial(scale_fill_ncl, discrete = TRUE)
+# scale_colour_continuous <- partial(scale_colour_ncl, discrete = FALSE)
+# scale_colour_discrete <- partial(scale_colour_ncl, discrete = TRUE)
+```
+
+class: ncl-default
+
+# NCL default slide class
+
+---
+
+class: ncl-map
+
+# NCL map slide class
+
+---
+
+class: ncl-bars
+
+# NCL bars slide class
+
+---
+
+class: ncl-right
+
+# NCL right slide class
+
+--
+
+class: inverse
+
+# Inverse colour slide
+
+text on a slide
+
+---
+
+# A slide where bullets appear
+
+* first point
+ 
+--
+
+* second point
+
+--
+
+* third point
+
+---
+class: ncl
+
+# Slide with class 'NCL'
+
+---
+class: ncl-narrow
+
+# Slide with class 'NCL-narrow'
+
+[//]: <> (URL's / References --------------------------------------------------)
+[email]:mailto:`r Sys.getenv("MY_EMAIL")`
+[web]:https://www.nclhealthandcare.org.uk/

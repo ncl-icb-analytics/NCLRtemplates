@@ -14,7 +14,7 @@
 #' @examples
 #' \dontrun{
 #' library(ggplot2)
-#' library(NCLtemplates)
+#' library(NCLRtemplates)
 #' ggplot(iris, aes(Sepal.Width, Sepal.Length, colour = Species)) +
 #'   geom_point() +
 #'   theme_nclicb()
@@ -49,7 +49,7 @@ theme_nclicb <- function(base_family = "Mulish"){
 #' @examples
 #' \dontrun{
 #' library(ggplot2)
-#' library(NCLtemplates)
+#' library(NCLRtemplates)
 #' ggplot(iris, aes(Sepal.Width, Sepal.Length, colour = Species)) +
 #'   geom_point() +
 #'   theme_nclics()

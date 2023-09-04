@@ -1,4 +1,4 @@
-#' Convert to an NCL xaringan presentation
+#' Convert to an NCL ICB xaringan presentation
 #'
 #' Format for converting from R Markdown to an NCL branded xaringan
 #' presentation.
@@ -8,6 +8,7 @@
 #' @return R Markdown output format to pass to \code{\link{render}}
 #'
 #' @importFrom xaringan moon_reader
+#' @import knitr
 #'
 #' @examples
 #' \dontrun{
@@ -20,7 +21,7 @@
 ncl_presentation <- function(...) {
   
   # get the locations of resource files located within the package
-  css <- system.file("rmarkdown/templates/ncl-presentation",
+  css <- system.file("rmarkdown/templates/ncl-icb-presentation",
                      "ncl_xaringan.css",
                      package = "NCLRtemplates"
   )

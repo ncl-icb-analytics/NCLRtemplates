@@ -16,6 +16,7 @@
 #'
 #' @importFrom rmarkdown word_document
 #' @importFrom ggplot2 theme_set
+#' @import knitr
 #'
 #' @examples
 #' \dontrun{
@@ -36,10 +37,10 @@ ncl_document <- function(use_numbered_headings = FALSE,
                         pandoc_args = NULL) {
   
   # get the locations of resource files located within the package
-  ncl_template <- system.file("rmarkdown/templates/ncl-document",
+  ncl_template <- system.file("rmarkdown/templates/ncl-ics-document",
                              ifelse(use_numbered_headings,
-                                    "NCL_Template_Numbered_Headings.docx",
-                                    "NCL_Template.docx"
+                                    "ncl_template_numbered_headings.docx",
+                                    "ncl_template.docx"
                              ),
                              package = "NCLRtemplates"
   )
@@ -49,7 +50,7 @@ ncl_document <- function(use_numbered_headings = FALSE,
   fig_height <- 3.8 # ~16:9 aspect ratio
   
   # Set's the base ggplot theme to the Strategy Unit Theme
-  ggplot2::theme_set(nclicb_theme())
+  ggplot2::theme_set(theme_nclicb())
   
   # call the base word_document function
   rmarkdown::word_document(
@@ -60,7 +61,7 @@ ncl_document <- function(use_numbered_headings = FALSE,
     fig_caption = fig_caption,
     df_print = df_print,
     highlight = highlight,
-    reference_docx = su_template,
+    reference_docx = ncl_template,
     keep_md = keep_md,
     md_extensions = md_extensions,
     pandoc_args = pandoc_args

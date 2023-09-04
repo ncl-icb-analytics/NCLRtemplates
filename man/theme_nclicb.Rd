@@ -16,7 +16,7 @@ requires installing, and this is handled in the package load and `ncl_setup` fun
 \examples{
 \dontrun{
 library(ggplot2)
-library(NCLtemplates)
+library(NCLRtemplates)
 ggplot(iris, aes(Sepal.Width, Sepal.Length, colour = Species)) +
   geom_point() +
   theme_nclicb()

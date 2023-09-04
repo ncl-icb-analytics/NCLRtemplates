@@ -1,9 +1,9 @@
 ---
 title: "Presentation"
 author: "**[`r Sys.getenv('MY_NAME')`][email]**<br />`r Sys.getenv('MY_JOBTITLE')`"
-institute: "NCL ICB"
+institute: "NCL ICS"
 output:
-  NCLtemplates::ncl_presentation: default
+  NCLRtemplates::ncl_presentation: default
 ---
 
 ```{r setup, include = FALSE}
@@ -16,6 +16,7 @@ stopifnot(Sys.getenv("MY_NAME") != "")
 stopifnot(Sys.getenv("MY_EMAIL") != "")
 stopifnot(Sys.getenv("MY_JOBTITLE") != "")
 
+library(Cairo)
 library(knitr)
 library(tidyverse)
 library(NCLRtemplates)

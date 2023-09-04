@@ -1,7 +1,7 @@
 # global variables are defined in this file. the file has been named such that
 # it will be executed before any other file
+#' @import Cairo
 .onLoad <- function(libname, pkgname){
-
   sysfonts::font_add_google("Open Sans", "Open Sans")
   sysfonts::font_add_google("Mulish", "Mulish")
 

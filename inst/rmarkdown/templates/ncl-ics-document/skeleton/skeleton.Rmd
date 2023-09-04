@@ -1,12 +1,12 @@
 ---
 title: "Untitled"
-author: "[North Central London ICB]"
+author: "[North Central London ICS]"
 output:
-  NCLtemplates::ncl_document: default
+  NCLRtemplates::ncl_document: default
 ---
 
 ```{r setup, include = FALSE}
-
+library(Cairo)
 library(knitr)
 library(tidyverse)
 library(NCLRtemplates)
@@ -21,10 +21,10 @@ opts_chunk$set(echo = FALSE,
 use_ncl_theme_colours <- FALSE
 
 if (use_ncl_theme_colours) {
-  scale_fill_continuous <- partial(scale_fill_ncl, discrete = FALSE)
-  scale_fill_discrete <- partial(scale_fill_ncl, discrete = TRUE)
-  scale_colour_continuous <- partial(scale_colour_ncl, discrete = FALSE)
-  scale_colour_discrete <- partial(scale_colour_ncl, discrete = TRUE)
+  scale_fill_continuous <- partial(scale_fill_ncl, palette = "ics", discrete = FALSE)
+  scale_fill_discrete <- partial(scale_fill_ncl, palette = "ics", discrete = TRUE)
+  scale_colour_continuous <- partial(scale_colour_ncl, palette = "ics", discrete = FALSE)
+  scale_colour_discrete <- partial(scale_colour_ncl, palette = "ics", discrete = TRUE)
 
   scale_color_continuous <- scale_colour_continuous
   scale_color_discrete <- scale_colour_discrete

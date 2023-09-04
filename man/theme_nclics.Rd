@@ -16,7 +16,7 @@ Creates a base theme for ggplot objects. By default this uses a font that
 \examples{
 \dontrun{
 library(ggplot2)
-library(NCLtemplates)
+library(NCLRtemplates)
 ggplot(iris, aes(Sepal.Width, Sepal.Length, colour = Species)) +
   geom_point() +
   theme_nclics()
