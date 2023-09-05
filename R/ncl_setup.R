@@ -9,13 +9,14 @@
 #'
 #' @return Updates you user .Renviron file to have the right variables
 #' @export
+#' 
 #'
 #' @examples
 #' ncl_setup()
 ncl_setup <- function(){
     
     # Environmental variables
-    path <- file.path(Sys.getenv("HOME"), ".Renviron")
+   path <- scoped_path_r("user", ".Renviron", envvar = "R_ENVIRON_USER")
     
     if(sum(grepl(pattern = "MY_NAME|MY_EMAIL|MY_JOBTITLE", x = readLines(path))) <3){
       

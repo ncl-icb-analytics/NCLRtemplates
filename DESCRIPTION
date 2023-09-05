@@ -21,6 +21,7 @@ Imports:
     showtext,
     sysfonts,
     usethis,
+    fs,
     xaringan
 RoxygenNote: 7.2.3
 Depends: 

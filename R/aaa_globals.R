@@ -114,3 +114,23 @@ ncl_theme_palettes <- c(
   "ics_teal"
 )
 
+# taken from usethis: https://github.com/r-lib/usethis
+#' @noRd
+#' @import usethis fs
+scoped_path_r <- function(scope = c("user", "project"), ..., envvar = NULL) {
+  scope <- match.arg(scope)
+  
+  # Try environment variable in user scopes
+  if (scope == "user" && !is.null(envvar)) {
+    env <- Sys.getenv(envvar, unset = "")
+    if (!identical(env, "")) {
+      return(user_path_prep(env))
+    }
+  }
+  
+  root <- switch(scope,
+                 user = path_home_r(),
+                 project = proj_get()
+  )
+  path(root, ...)
+}
