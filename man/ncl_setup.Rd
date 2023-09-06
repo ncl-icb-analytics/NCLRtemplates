@@ -10,7 +10,7 @@ ncl_setup()
 Updates you user .Renviron file to have the right variables
 }
 \description{
-Once of the safest, and most reuable ways to automatically add your details to the Rmarkdown templates
+Once of the safest, and most reusable ways to automatically add your details to the Rmarkdown templates
 in this file is to add them to conserved 'environmental variables, that all users share.
 These variables are MY_NAME, MY_EMAIL and MY_JOBTITLE. This function scans your .Renviron file (that holds 
 these variables) and detects if they are present.  If not it adds them, then opens the file for
@@ -18,5 +18,7 @@ you to fill them in.  Once you've done that, please save and restart R, as RStud
 when it opens.
 }
 \examples{
+\dontrun{
 ncl_setup()
+}
 }

@@ -128,8 +128,14 @@ scoped_path_r <- function(scope = c("user", "project"), ..., envvar = NULL) {
   }
   
   root <- switch(scope,
-                 user = path_home_r(),
-                 project = proj_get()
+                 user = fs::path_home_r(),
+                 project = usethis::proj_get()
   )
   path(root, ...)
+}
+
+user_path_prep <- function(path) {
+  ## usethis uses fs's notion of home directory
+  ## this ensures we are consistent about that
+  path_expand(path)
 }
