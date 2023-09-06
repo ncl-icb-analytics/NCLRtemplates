@@ -39,8 +39,8 @@ ncl_document <- function(use_numbered_headings = FALSE,
   # get the locations of resource files located within the package
   ncl_template <- system.file("rmarkdown/templates/ncl-icb-document",
                              ifelse(use_numbered_headings,
-                                    "ncl_template_numbered_headings.docx",
-                                    "ncl_template.docx"
+                                    "ncl_template_icb_numbered_headings.docx",
+                                    "ncl_template_icb.docx"
                              ),
                              package = "NCLRtemplates"
   )
