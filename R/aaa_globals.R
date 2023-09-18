@@ -139,3 +139,16 @@ user_path_prep <- function(path) {
   ## this ensures we are consistent about that
   path_expand(path)
 }
+
+create_directory <- function(path) {
+  if (dir_exists(path)) {
+    return(invisible(FALSE))
+  } else if (file_exists(path)) {
+    ui_stop("{ui_path(path)} exists but is not a directory.")
+  }
+  
+  dir_create(path, recurse = TRUE)
+  ui_done("Creating {ui_path(path)}")
+  invisible(TRUE)
+}
+

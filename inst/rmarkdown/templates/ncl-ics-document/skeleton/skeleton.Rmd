@@ -1,6 +1,6 @@
 ---
 title: "Untitled"
-author: "[North Central London ICS]"
+author: "**[`r Sys.getenv('MY_NAME')`][email]**<br />`r Sys.getenv('MY_JOBTITLE')`"
 output:
   NCLRtemplates::ncl_document: default
 ---

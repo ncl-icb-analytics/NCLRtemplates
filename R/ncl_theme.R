@@ -22,13 +22,14 @@
 theme_nclicb <- function(base_family = "Mulish"){
   theme_classic(base_family = base_family) +
     theme(
+      text = element_text(family=base_family, size=12),
       axis.title = element_text(family=base_family),
       panel.background = element_blank(),
       panel.grid = element_blank(),
       axis.line = element_line(colour = ncl_theme_cols("icb_darkgrey_100")),
       strip.background = element_rect(fill = ncl_theme_cols("icb_midgrey_40")),
       plot.title = element_text(face = "bold", size = 16),
-      plot.subtitle = element_text(face = "italic", size = 10)
+      plot.subtitle = element_text(face = "italic", size = 12)
     )
 }
 
@@ -57,12 +58,13 @@ theme_nclicb <- function(base_family = "Mulish"){
 theme_nclics <- function(base_family = "Mulish"){
   theme_classic(base_family = base_family) +
     theme(
+      text = element_text(family=base_family, size=12),
       axis.title = element_text(family=base_family),
       panel.background = element_blank(),
       panel.grid = element_blank(),
       axis.line = element_line(colour = ncl_theme_cols("icb_darkgrey_100")),
       strip.background = element_rect(fill = ncl_theme_cols("icb_midgrey_40")),
       plot.title = element_text(face = "bold", size = 16),
-      plot.subtitle = element_text(face = "italic", size = 10)
+      plot.subtitle = element_text(face = "italic", size = 12)
     )
 }

@@ -12,10 +12,12 @@ Updates you user .Renviron file to have the right variables
 \description{
 Once of the safest, and most reusable ways to automatically add your details to the Rmarkdown templates
 in this file is to add them to conserved 'environmental variables, that all users share.
-These variables are MY_NAME, MY_EMAIL and MY_JOBTITLE. This function scans your .Renviron file (that holds 
+These variables are MY_NAME, MY_EMAIL, MY_JOBTITLE and SANDPIT. This function scans your .Renviron file (that holds 
 these variables) and detects if they are present.  If not it adds them, then opens the file for
 you to fill them in.  Once you've done that, please save and restart R, as RStudio caches the file
 when it opens.
+NOTE: the SANDPIT variable should be the connection string for accessing the NCL sandpit SQL server
+environment.  This is not published on GitHub, but available locally.
 }
 \examples{
 \dontrun{
