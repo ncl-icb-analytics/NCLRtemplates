@@ -1,6 +1,6 @@
 ---
 title: "Presentation"
-author: "**[`r Sys.getenv('MY_NAME')`][email]**<br />`r Sys.getenv('MY_JOBTITLE')`"
+author: "**[`r Sys.getenv('MY_NAME')`] [`r Sys.getenv('MY_EMAIL)`]**<br />`r Sys.getenv('MY_JOBTITLE')`"
 institute: "NCL ICB"
 output:
   NCLRtemplates::ncl_presentation: default
