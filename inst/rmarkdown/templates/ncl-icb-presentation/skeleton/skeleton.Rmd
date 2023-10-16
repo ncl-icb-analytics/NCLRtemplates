@@ -1,6 +1,6 @@
 ---
 title: "Presentation"
-author: "**[`r Sys.getenv('MY_NAME')`] [`r Sys.getenv('MY_EMAIL)`]**<br />`r Sys.getenv('MY_JOBTITLE')`"
+author: "**[`r Sys.getenv('MY_NAME')`] [`r Sys.getenv('MY_EMAIL')`]**<br />`r Sys.getenv('MY_JOBTITLE')`"
 institute: "NCL ICB"
 output:
   NCLRtemplates::ncl_presentation: default
@@ -29,7 +29,7 @@ opts_chunk$set(echo = FALSE,
                dev.args = list(type = "cairo"))
 
 # Set's the base ggplot theme to the Strategy Unit Theme
-theme_set(ncl_theme())
+theme_set(theme_nclicb())
 
 # uncomment the following lines if you want to use the Strategy Unit theme
 # colours by default
