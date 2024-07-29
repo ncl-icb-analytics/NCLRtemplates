@@ -1,45 +1,17 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://ncl-icb-analytics.github.io/NCLRtemplates/404.html</loc>
-  </url>
-  <url>
-    <loc>https://ncl-icb-analytics.github.io/NCLRtemplates/LICENSE-text.html</loc>
-  </url>
-  <url>
-    <loc>https://ncl-icb-analytics.github.io/NCLRtemplates/LICENSE.html</loc>
-  </url>
-  <url>
-    <loc>https://ncl-icb-analytics.github.io/NCLRtemplates/authors.html</loc>
-  </url>
-  <url>
-    <loc>https://ncl-icb-analytics.github.io/NCLRtemplates/index.html</loc>
-  </url>
-  <url>
-    <loc>https://ncl-icb-analytics.github.io/NCLRtemplates/reference/index.html</loc>
-  </url>
-  <url>
-    <loc>https://ncl-icb-analytics.github.io/NCLRtemplates/reference/ncl_document.html</loc>
-  </url>
-  <url>
-    <loc>https://ncl-icb-analytics.github.io/NCLRtemplates/reference/ncl_presentation.html</loc>
-  </url>
-  <url>
-    <loc>https://ncl-icb-analytics.github.io/NCLRtemplates/reference/ncl_setup.html</loc>
-  </url>
-  <url>
-    <loc>https://ncl-icb-analytics.github.io/NCLRtemplates/reference/ncl_theme_cols.html</loc>
-  </url>
-  <url>
-    <loc>https://ncl-icb-analytics.github.io/NCLRtemplates/reference/ncl_theme_gradient_colour_scales.html</loc>
-  </url>
-  <url>
-    <loc>https://ncl-icb-analytics.github.io/NCLRtemplates/reference/ncl_theme_pal.html</loc>
-  </url>
-  <url>
-    <loc>https://ncl-icb-analytics.github.io/NCLRtemplates/reference/theme_nclicb.html</loc>
-  </url>
-  <url>
-    <loc>https://ncl-icb-analytics.github.io/NCLRtemplates/reference/theme_nclics.html</loc>
-  </url>
+<urlset xmlns = 'http://www.sitemaps.org/schemas/sitemap/0.9'>
+<url><loc>https://ncl-icb-analytics.github.io/NCLRtemplates/404.html</loc></url>
+<url><loc>https://ncl-icb-analytics.github.io/NCLRtemplates/LICENSE-text.html</loc></url>
+<url><loc>https://ncl-icb-analytics.github.io/NCLRtemplates/LICENSE.html</loc></url>
+<url><loc>https://ncl-icb-analytics.github.io/NCLRtemplates/authors.html</loc></url>
+<url><loc>https://ncl-icb-analytics.github.io/NCLRtemplates/index.html</loc></url>
+<url><loc>https://ncl-icb-analytics.github.io/NCLRtemplates/reference/index.html</loc></url>
+<url><loc>https://ncl-icb-analytics.github.io/NCLRtemplates/reference/ncl_document.html</loc></url>
+<url><loc>https://ncl-icb-analytics.github.io/NCLRtemplates/reference/ncl_presentation.html</loc></url>
+<url><loc>https://ncl-icb-analytics.github.io/NCLRtemplates/reference/ncl_setup.html</loc></url>
+<url><loc>https://ncl-icb-analytics.github.io/NCLRtemplates/reference/ncl_theme_cols.html</loc></url>
+<url><loc>https://ncl-icb-analytics.github.io/NCLRtemplates/reference/ncl_theme_gradient_colour_scales.html</loc></url>
+<url><loc>https://ncl-icb-analytics.github.io/NCLRtemplates/reference/ncl_theme_pal.html</loc></url>
+<url><loc>https://ncl-icb-analytics.github.io/NCLRtemplates/reference/theme_nclicb.html</loc></url>
+<url><loc>https://ncl-icb-analytics.github.io/NCLRtemplates/reference/theme_nclics.html</loc></url>
 </urlset>
+
